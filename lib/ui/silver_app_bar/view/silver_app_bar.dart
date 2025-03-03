@@ -15,7 +15,7 @@ class SilverAppBar extends CustomScrollView {
        surfaceTintColor: Colors.blueAccent,
        title: Center(
          child: Text(
-           'ToDo',
+           'Author\'s route' ,
            style: theme.textTheme.bodyLarge,
          ),
        ),
@@ -37,7 +37,7 @@ class SilverAppBar extends CustomScrollView {
                  Expanded(
                    child: TextField(
                      style: TextStyle(color: Colors.black),
-                     decoration: InputDecoration(hintText: 'search task'),
+                     decoration: InputDecoration(hintText: 'search route'),
                    ),
                  ),
                ],
