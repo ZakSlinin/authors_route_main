@@ -1,6 +1,8 @@
-# author_route_main
+# Author's routes. 
 
-A new Flutter project.
+A flutter project. Support ios and android.
+
+### Application for travelers with the ability to create an author's route 
 
 ## Getting Started
 
