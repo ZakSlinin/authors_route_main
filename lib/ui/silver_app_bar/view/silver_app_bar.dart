@@ -11,7 +11,7 @@ class SilverAppBar extends CustomScrollView {
        snap: true,
        floating: true,
        pinned: true,
-       backgroundColor: Color.fromARGB(255, 12, 12, 12),
+       backgroundColor: theme.appBarTheme.backgroundColor,
        surfaceTintColor: Colors.blueAccent,
        title: Center(
          child: Text(

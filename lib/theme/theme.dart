@@ -10,4 +10,7 @@ final darkTheme = ThemeData(
         color: Colors.white, fontSize: 15, fontWeight: FontWeight.w100),
   ),
   scaffoldBackgroundColor: Color(0xFFF3F3F3),
+  appBarTheme: AppBarTheme(
+    backgroundColor: Color.fromARGB(255, 4, 26, 91),
+  ),
 );
