@@ -94,4 +94,4 @@ If you have any questions or suggestions, feel free to reach out:
 
 ## Telegram: @ZakSln 
 
-## email: slininzahar9@gmal.com
+## email: slininzahar9@gmail.com
