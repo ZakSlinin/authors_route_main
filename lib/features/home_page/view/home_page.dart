@@ -37,17 +37,24 @@ class _AuthorsRouteHomeState extends State<AuthorsRouteHome> {
             onPageChanged: (value) {
               setState(() => _selectedPageIndex = value);
             },
-            children: const [SearchScreen(), AddRouteScreen(), ProfileScreen()],
+            children: const [
+              SearchScreen(),
+              AddRouteScreen(),
+              ProfileScreen()
+            ],
           ),
-
           Positioned(
             left: 20,
             right: 20,
             bottom: 50,
             height: 101,
-            child: CustomNavigationBar(selectedPageIndex: _selectedPageIndex, onTap: _openPage,),
+            child: CustomNavigationBar(
+              selectedPageIndex: _selectedPageIndex,
+              onTap: _openPage,
+            ),
           ),
         ],
       ),
     );
-  }}
+  }
+}
