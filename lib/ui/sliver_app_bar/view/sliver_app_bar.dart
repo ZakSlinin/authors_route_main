@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SilverAppBar extends CustomScrollView {
-  const SilverAppBar({super.key});
+class CustomSliverAppBar extends CustomScrollView {
+  const CustomSliverAppBar({super.key});
 
    @override
     Widget build(BuildContext context) {

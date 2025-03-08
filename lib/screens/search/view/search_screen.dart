@@ -1,4 +1,4 @@
-import 'package:author_route_main/ui/silver_app_bar/silver_app_bar.dart';
+import 'package:author_route_main/ui/sliver_app_bar/sliver_app_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +9,7 @@ class SearchScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        SilverAppBar(),
+        CustomSliverAppBar(),
       ],
     );
   }
