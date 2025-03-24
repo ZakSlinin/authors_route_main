@@ -1,7 +1,7 @@
-import 'package:author_route_main/screens/add_route/add_route.dart';
-import 'package:author_route_main/screens/profile/profile.dart';
+import 'package:author_route_main/features/home_page/home_page_screens/add_route/add_route.dart';
+import 'package:author_route_main/features/home_page/home_page_screens/profile/profile.dart';
+import 'package:author_route_main/features/home_page/home_page_screens/search/search.dart';
 import 'package:author_route_main/ui/navigation_bar/bar.dart';
-import 'package:author_route_main/screens/search/search.dart';
 import 'package:flutter/material.dart';
 
 class AuthorsRouteHome extends StatefulWidget {

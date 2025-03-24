@@ -1,8 +1,9 @@
+import 'package:author_route_main/features/home_page/home_page_screens/search/bloc/search_screen_bloc.dart';
 import 'package:author_route_main/repositories/authors_routes/authors_routes.dart';
 import 'package:author_route_main/repositories/authors_routes/authors_routes_repository.dart';
 import 'package:author_route_main/ui/sliver_app_bar/sliver_app_bar.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -14,15 +15,17 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   List<Routes>? _routes;
 
+  final _searchScreenBloc = SearchScreenBloc();
+
   @override
   void initState() {
     _loadRoutes();
+    _searchScreenBloc.add(LoadSearchScreen());
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-
     return CustomScrollView(
       slivers: [
         CustomSliverAppBar(),
@@ -51,7 +54,7 @@ class _SearchScreenState extends State<SearchScreen> {
   }
 
   Future<void> _loadRoutes() async {
-    _routes = await RoutesRepository(dio: Dio()).getRoute();
+    _routes = await GetIt.I<RoutesRepository>().getRoute();
     setState(() {});
   }
 }
